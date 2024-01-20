@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.theme-toggle label {
+    margin-right: 10px;
+    color: rgb(119, 119, 119);
+}
+
+.theme-toggle input {
+    cursor: pointer;
+}
+
+.add-task {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.add-task input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.add-task input:hover{
+    background-color: #ccc;
+}
+
+.add-task #due-date {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.add-task button {
+    padding: 12px;
+    background-color: #0ab70f;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.add-task button:hover{
+    background-color: #08900d;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #fff;
+    color:#222;
+    transition: background-color 0.3s ease;
+}
+.task.task:hover{
+    background-color: #ccc;
+}
+
+.task.completed {
+    background-color: #e2f7e3;
+    text-decoration: line-through;
+}
+
+.task-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task-actions button {
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* Add a gradient background for a more attractive design */
+body.dark-mode {
+    background: linear-gradient(to right, #222, #444);
+    color: #fff;
+}
+
+.container.dark-mode {
+    background-color: #333;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.task.dark-mode {
+    background-color: #444;
+}
+
+.task.completed.dark-mode {
+    background-color: #333;
+}
+
+.theme-toggle.dark-mode label {
+    color: #fff;
+}
+
+.theme-toggle.dark-mode input {
+    border-color: #fff;
+}
+
+
+
